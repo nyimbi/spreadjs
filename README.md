@@ -14,7 +14,7 @@ To test **real time data syncing** one can open the application in multiple tabs
 Tech
 -----------
 
-This application uses:
+This application uses the following open source projects:
 
 * [Meteor *V 0.9.3.1*](https://www.meteor.com/)- It is an open-source platform for building top-quality web apps in a fraction of the time. 
 
