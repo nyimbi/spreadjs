@@ -8,7 +8,8 @@ This application is a combination of meteor and spreadjs, a first of its kind ap
 > syncing and a better User Experience for its users.
 > This application gives a total different look and feel to spreadjs and we encourage
 > meteor developers to use this application for smoother data handling on the client side.
->
+
+To test real time data syncing one can open the application in multiple tabs and enter data to check.
 
 Version
 ----
