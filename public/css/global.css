@@ -1,0 +1,12 @@
+body {
+	overflow: hidden;
+}
+
+.margin-xy {
+	margin: 2%;
+}
+
+.margin-y {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
