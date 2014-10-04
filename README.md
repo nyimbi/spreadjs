@@ -1,6 +1,6 @@
 Meteor + SpreadJS V1.0
 =========
-----
+
 This application is a combination of meteor and spreadjs, a first of its kind application in meteor. 
 
 > The overriding design goal of this application is to combine the reactive
