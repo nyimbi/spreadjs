@@ -34,7 +34,6 @@ License
 ----
 
 * GPL
-
 * License of meteor and spreadjs are also applicable
 
 
