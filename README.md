@@ -16,7 +16,7 @@ Tech
 
 This application uses the following open source projects:
 
-* [Meteor *V 0.9.3.1*](https://www.meteor.com/)- It is an open-source platform for building top-quality web apps in a fraction of the time. 
+* [Meteor *V 1.0*](https://www.meteor.com/)- It is an open-source platform for building top-quality web apps in a fraction of the time. 
 
 * [SpreadJS *V 3.20142.13*](http://wijmo.com/widgets/wijmo-enterprise/spreadjs/)- It is a comprehensive, high-performance HTML5 spreadsheet component for enterprise web application development.
 
