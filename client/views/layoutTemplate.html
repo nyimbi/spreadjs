@@ -1,110 +1,125 @@
 <head>
 
-	<meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="initial-scale=0.5">
 
-	<meta name="viewport" content="initial-scale=1">
+    <title>H Lab Example</title>
+    <link href="../../img/icon.png" rel="shortcut icon">
 
-	<title>spreadjs</title>
-	<link href="../../img/icon.png" rel="shortcut icon">
-
-	<link rel="stylesheet" type="text/css" href="../../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../../css/global.css">
 
 </head>
 
 <template name="layoutTemplate">
-	{{> layoutHeader}}
-	{{> yield}}
+    {{> layoutHeader}} {{> yield}}
 </template>
 
 <template name="loadingTemplate">
-	<section><center><img class="margin-y" src="../../img/loading.gif"></center></section>
+    <section>
+        <center>
+            <img class="margin-y" src="../../img/loading.gif">
+        </center>
+    </section>
 </template>
 
 <template name="notFoundTemplate">
-	<section>
-		<div class="margin-xy row">
-			<div class="col-sm-2">
-				{{> layoutMenu}}
-			</div>
-			<div class="col-sm-10">
-				<h4><i class="fa fa-shield"></i>&nbsp;&nbsp;<em>notFoundTemplate</em></h4>
-				<p>description ..</p>
-			</div>
-		</div>
-	</section>
+    <section>
+        <div class="margin-xy row">
+            <div class="col-sm-2">
+                {{> layoutMenu}}
+            </div>
+            <div class="col-sm-10">
+                <h4><i class="fa fa-shield"></i>&nbsp;&nbsp;
+                    <em>notFoundTemplate</em>
+                </h4>
+                <p>description ..</p>
+            </div>
+        </div>
+    </section>
 </template>
 
 <template name="noAccessTemplate">
-	<section>
-		<div class="margin-xy row">
-			<div class="col-sm-2">
-				{{> layoutMenu}}
-			</div>
-			<div class="col-sm-10">
-				<h4><i class="fa fa-shield"></i>&nbsp;&nbsp;<em>noAccessTemplate</em></h4>
-				<p>description ..</p>
-			</div>
-		</div>
-	</section>
+    <section>
+        <div class="margin-xy row">
+            <div class="col-sm-2">
+                {{> layoutMenu}}
+            </div>
+            <div class="col-sm-10">
+                <h4><i class="fa fa-shield"></i>&nbsp;&nbsp;
+                    <em>noAccessTemplate</em>
+                </h4>
+                <p>description ..</p>
+            </div>
+        </div>
+    </section>
 </template>
 
 <template name="layoutHeader">
-	<header class="navbar navbar-default" id="layoutHeader" role="banner" style="border-radius: 0; margin: 0;">
-		<div class="container">
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="../../"><img src="../../img/clairvolex.png" style="height: 80%;"></a>
-			</div>
-			<nav class="collapse navbar-collapse" id="navbarCollapse" role="navigation">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-bell"></i></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
-						<ul class="dropdown-menu">
-							<li class="dropdown-header" role="presentation">general</li>
-							<li><a href="#"><i class="fa fa-cog"></i>&nbsp;&nbsp;<em>control panel</em></a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header" role="presentation">spreadjs</li>
-							<li><a href="#"><i class="fa fa-database"></i>&nbsp;&nbsp;<em>banker</em></a></li>
-							<li><a href="#"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;<em>logger</em></a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <header class="navbar navbar-default" id="layoutHeader" role="banner" style="border-radius: 0; margin: 0;">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../">
+                    <img src="../../img/clairvolex.jpg" style="height: 80%;">
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="navbarCollapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-bell"></i></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header" role="presentation">general</li>
+                            <li><a href="#"><i class="fa fa-cog"></i>&nbsp;&nbsp;<em>control panel</em></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header" role="presentation">spreadjs</li>
+                            <li><a href="#"><i class="fa fa-database"></i>&nbsp;&nbsp;<em>spread bank</em></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;<em>logger</em></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </template>
 
 <template name="layoutMenu">
-	<div class="list-group">
-		<a class="list-group-item" href="../../spreadjs"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;<em>spreadjs</em></a>
-	</div>
+    <div class="list-group">
+        <a class="list-group-item" href="../../spreadjs"><i class="fa fa-file-excel-o"></i>&nbsp;&nbsp;spread sheet</a>
+    </div>
 </template>
 
 <template name="spreadjs">
-	<section>{{> spreadjsHeader}}</section>
-	<section>{{> spreadjsBody}}</section>
+    <section>{{> spreadjsHeader}}</section>
+    <section>{{> spreadjsBody}}</section>
 </template>
 
 <template name="spreadjsHeader">
-	<div class="col-sm-12" id="spreadjsHeader" style="background: #C3D4EB; margin: 0; padding: 8px 0;">
-		<div class="col-sm-6">
-			<div class="col-sm-6">
-				<input class="form-control" id="search" placeholder="search .." style="font-size: 12px; height: 22px;" type="text">
-			</div>
-			<div class="col-sm-6" id="status" style="line-height: 22px;"><i class="fa fa-code"></i>&nbsp;&nbsp;preview version ..</div>
-		</div>
-		<div class="col-sm-6">
-			<div class="pull-right">
-				<button class="btn btn-xs btn-primary" id="new">new</button>
-				<button class="btn btn-xs btn-primary" id="download">share</button>
-			</div>
-		</div>
-	</div>
+    <div class="col-sm-12" id="spreadjsHeader" style="background: #C3D4EB; margin: 0; padding: 8px 0;">
+        <div class="col-sm-6">
+            <div class="col-sm-6">
+                <input class="form-control" id="search" placeholder="search .." style="font-size: 12px; height: 22px;" type="text">
+            </div>
+            <div class="col-sm-6" id="status" style="line-height: 22px;"><i class="fa fa-code"></i>&nbsp;&nbsp;preview version ..</div>
+        </div>
+        <div class="col-sm-6">
+            <div class="pull-right">
+                <button class="btn btn-xs btn-primary" id="new">new</button>
+                <button class="btn btn-xs btn-primary" id="download">share</button>
+            </div>
+        </div>
+    </div>
 </template>
 
 <template name="spreadjsBody">
-	<div class="col-sm-12" id="spreadjsBody" style="border-top: 1px solid #AAA; margin: 0; padding: 0;">
-		<div id="spreadjs"></div>
-	</div>
+    <div class="col-sm-12" id="spreadjsBody" style="border-top: 1px solid #AAA; margin: 0; padding: 0;">
+        <div id="spreadjs"></div>
+    </div>
 </template>

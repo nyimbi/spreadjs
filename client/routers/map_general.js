@@ -7,7 +7,10 @@ Router.map(function () {
 Router.map(function () {
 	this.route("spreadjs", {
 		onBeforeAction: function() {
-			// Session.set('taskId', this.params.taskId);
+            // if (typeof(this.params.taskId) != "undefined" && this.params.taskId != null) Session.set("taskId", this.params.taskId);
+            // else Router.go("signout");
+
+			this.next();
 		},
 		path: "/spreadjs",
 		waitOn: function() {

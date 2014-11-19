@@ -1,7 +1,9 @@
 Router.configure({
 	layoutTemplate: "layoutTemplate",
 	loadingTemplate: "loadingTemplate",
-	notFoundTemplate: "notFoundTemplate"
+	notFoundTemplate: "notFoundTemplate",
+
+	
 });
 
 Router.onBeforeAction("loading");

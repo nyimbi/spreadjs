@@ -1,12 +1,16 @@
 body {
-	overflow: hidden;
+    overflow: hidden;
 }
-
 .margin-xy {
-	margin: 2%;
+    margin: 2%;
 }
-
 .margin-y {
-	margin-bottom: 2%;
-	margin-top: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+/* iron-router-progress */
+
+#iron-router-progress {
+    background-color: steelblue;
+    box-shadow: 0 0 5px steelblue;
 }
