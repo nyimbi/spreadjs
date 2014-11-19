@@ -1,4 +1,4 @@
-Meteor + SpreadJS V1.0
+Meteor + SpreadJS version 0.0.1
 =========
 
 This application is a combination of meteor and spreadjs, a first of its kind application in meteor. 
