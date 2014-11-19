@@ -311,7 +311,7 @@ Template.spreadjsBody.rendered = function() {
                 if (typeof(data_source[row]["row_status"]) == "undefined" || data_source[row]["row_status"] == null)
                     A["row_status"] = "_";
 
-            db_clex_pi.update({
+            _spreadjs.update({
                 _id: data_source[row]["_id"]
             }, {
                 $set: A
