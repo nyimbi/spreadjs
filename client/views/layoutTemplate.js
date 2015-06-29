@@ -480,6 +480,27 @@ Template.spreadjsBody.rendered = function() {
 
             }
     });
+    // capture & sync autofill event
+    activeSheet.bind($.wijmo.wijspread.Events.DragFillBlockCompleted, function (e, info) {
+          var col = info.fillRange.col;
+          var row  = info.fillRange.row;
+          //filling in up/down direction
+          if(info.fillDirection == 2 || info.fillDirection == 3){
+                for(var i=0;i<info.fillRange.rowCount;i++){
+                  _cell_value(row,col,activeSheet.getValue(row,col));
+                  // console.log(row,col,activeSheet.getValue(row,col));
+                  row += 1;
+                }
+                // console.log(row);
+          //filling in left/right direction
+          }else if(info.fillDirection == 0 || info.fillDirection == 1){
+              for(var i=0; i<info.fillRange.colCount; i++){
+                _cell_value(row,col,activeSheet.getValue(row,col));
+                // console.log(row,col,activeSheet.getValue(row,col));
+                col += 1;
+              }
+          }
+    });
     /*
     	activeSheet.bind($.wijmo.wijspread.Events.EditEnded, function(_X, A) {
     		_cell_value(A.row, A.col, activeSheet.getValue(A.row, A.col));
